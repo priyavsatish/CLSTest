@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CLS JS Project</title>
+    <link rel="stylesheet" href="css/cls-js-project.css">
+    <script type="text/javascript" src="jstest/cls-js-project.js"></script>
+  </head>
+  <body class="h4">
+    <div class="container">
+      <h1>CLS JavaScript Project</h1>      
+      <form autocomplete="off" action="" name="clsForm"><br>
+        <fieldset name="LoginInfo"><input size="30" placeholder="username"
+          name="username" id="username" type="text"> <br>
+        <br>
+        Password:<br>
+        <input size="30" required="required" placeholder="password" name="pwd1"
+          id="pwd1" type="password"> 
+    <br>
+        Repeat Password:<br>
+        <input size="30" required="required" placeholder="password" name="pwd2"
+          id="pwd2" type="password" > 
+          <span class="hint" id="pwd1Hint">Password
+            is too short (must be at least 8 characters)</span> 
+            
+          <br><span class="hint" id="pwd2Hint">Passwords
+          don't match</span></br>
+          <br>
+        <br>
+        <legend>Login Info</legend></fieldset>
+      <br>
+        <br>
+        <fieldset id="bioInfo"> &nbsp;&nbsp; Brief Bio<br>
+          <textarea wrap="soft" rows="6" cols="40" name="bio" id="bio"></textarea>
+          <div id="charLimit">Limit: 140 characters. You have <span id="charsLeft">140</span>
+            left.</div>
+          
+          <div id="selects">
+            <div id="select1Div" style="float:left;margin-right:15px;"> Select
+              Your <span id='select1Span'>&lt;something&gt;</span> <br>
+              <select name="firstSelect" id="firstSelect">
+                <option>----</option>
+              </select>
+            </div>
+            <div id="select2Div"> Select Your <span id='select2Span'>&lt;somethingElse&gt;</span>
+              <br>
+              <select name="secondSelect" id="secondSelect">
+                <option>----</option>
+                &nbsp;
+              </select>
+            </div>
+          </div>
+          <br>
+          <fieldset id="somedetails" style="display:none">
+              <legend>Details</legend>
+              Some detail 1<span id="somedetail1"></span><br>
+              Some detail 2:<span id="somedetail2"></span><br>
+          </fieldset>
+          <br>
+          Contact Info<br>
+          <br>
+          Address<br>
+          <input size="30" placeholder="Street Address" name="address" id="address"
+            type="text"><br>
+          <br>
+          City&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp; State&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp; Postal Code<br>
+          <input size="20" placeholder="Town or City" name="city" id="city" type="text">&nbsp;&nbsp;&nbsp;
+          <input size="10" placeholder="State/Province" name="state" id="state"
+            type="text">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+          <input placeholder="Postal Code" name="zip" id="zip " type="text"><br>
+          <br>
+          Phone&nbsp;&nbsp;&nbsp; <br>
+          <input size="16" placeholder="Phone Number" pattern="[7-9]{1}[0-9]{9}" id="phone" name="phone" 
+            type="text"><span class="hint" id="phoneHint">Phone must contain only numbers</span><br>
+          <br>
+          
+          Email<br>
+          <input placeholder="Email address" id="email" name="email" type="email"><br>
+          <br>
+          <button type="submit" id="submitBtn" name="submit">Register Me!</button><br>
+          
+          <legend>About You</legend></fieldset>
+        <br>
+      </form>
+      <br>
+    </div>
+  </body>
+</html>
